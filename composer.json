@@ -1,0 +1,16 @@
+{
+    "name": "diego/broobe-challenge",
+    "description": "A Theme based in GeneratePress with functionality",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mauro Gaitan",
+            "email": "maurodeveloper86@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -14,3 +14,4 @@
 /xmlrpc.php
 # Log files
 *.log
+/vendor/
