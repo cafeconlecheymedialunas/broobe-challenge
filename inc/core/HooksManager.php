@@ -22,8 +22,8 @@ class HooksManager {
 
         foreach ( $actions as $action_name => $action_details ) {
             $method        = $action_details[0];
-            $priority      = $action_details[1];
-            $accepted_args = $action_details[2];
+            $priority      = (isset($action_details[1])?$action_details[1]:null);
+            $accepted_args = (isset($action_details[2])?$action_details[2]:null);
 
             add_action(
                 $action_name,
