@@ -1,8 +1,12 @@
-# broobe-challenge
+# Broobe Challenge Theme
+
+### Problemas
 No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-env como entorno. Estoy de viaje y hice la prueba con una computadora prestada. El error que me da es que tengo que activar la virtualización. No me dió el tiempo para resolverlo. Use un Laragon 
 . Coloco aqui el archivo que hubiese usado pero no pude probarlo
 
-{
+```php
+<?php
+  echo {
   "core": "WordPress/WordPress#master",
   "themes" :{
     "https://downloads.wordpress.org/theme/generatepress.3.3.0.zip"
@@ -16,7 +20,10 @@ No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-
     "WP_DEBUG_LOG": true
   }
 
-}
+};
+?>
+```
+
 Como probar las funcionalidades
 En el directorio del theme hay un archivo xml que se puede importar para tener contenido  de prueba. Se debe ir a Herramientas - Importar - Ejecutar el importador. Esto es Opcional
 Metabox Redirect:
