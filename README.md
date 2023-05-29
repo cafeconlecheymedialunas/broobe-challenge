@@ -38,6 +38,4 @@ No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-
 
 ### Mejoras: 
 Metabox Redirect:
-
-Crear una pagina y se observará el metabox a la derecha
- Cuando la cadena de redirecciones se repite alguna de las paginas seleccionadas esto produce un error too many redirects. Hay que validar que las paginas seleccionadas no se repitan y que no superen un cierto numero de redirecciones. Desde el frontend yo pondria en la UI un aviso de que no se puede seleccionar la pagina y el motivo
+- Cuando en la cadena de redirecciones se repite alguna de las paginas seleccionadas esto produce un error too many redirects. Hay que validar que las paginas seleccionadas no se repitan y que no superen un cierto numero de redirecciones. Desde el frontend yo pondria en la UI un aviso de que no se puede seleccionar la pagina y el motivo
