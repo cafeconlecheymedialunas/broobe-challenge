@@ -1,9 +1,8 @@
 <?php
 
-namespace Src;
+namespace Src\Functions;
 
 use Src\Core\Interfaces\Actions;
-use Src\Core\ListPagination;
 
 class CustomEndpoint implements Actions
 {

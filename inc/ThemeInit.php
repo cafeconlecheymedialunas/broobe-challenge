@@ -2,15 +2,14 @@
 
 namespace Src;
 
-
-use Src\ListPagination;
-use Src\CustomEndpoint;
 use Src\Core\HooksManager;
 
-use Src\MetaBoxRedirect;
+use Src\Functions\MetaBoxRedirect;
+use Src\Functions\SearchQuery;
+use Src\Functions\ListPagination;
+use Src\Functions\CustomEndpoint;
 
-
-class Theme
+class ThemeInit
 {
 	private static $instance,$initializer,$hooks_manager;
 
@@ -23,7 +22,7 @@ class Theme
 		return self::$instance;
 	}
 
-	public function init()
+	public function run()
 	{
 
 		$this->hooks_manager = new HooksManager();

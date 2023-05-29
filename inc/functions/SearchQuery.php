@@ -1,6 +1,6 @@
 <?php
 
-namespace Src;
+namespace Src\Functions;
 
 use Src\Core\Interfaces\Actions;
 
