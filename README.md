@@ -6,7 +6,7 @@ No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-
 
 ```php
 <?php
-  echo {
+  {
   "core": "WordPress/WordPress#master",
   "themes" :{
     "https://downloads.wordpress.org/theme/generatepress.3.3.0.zip"
