@@ -24,18 +24,16 @@ No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-
 ?>
 ```
 
-Como probar las funcionalidades
-En el directorio del theme hay un archivo xml que se puede importar para tener contenido  de prueba. Se debe ir a Herramientas - Importar - Ejecutar el importador. Esto es Opcional
-Metabox Redirect:
-
-Crear una pagina y se observará el metabox a la derecha
-
-Listado de Post con paginación:
-Se debe crear o editar una página y pegar en el editor el siguiente shortcode [broobe-postlist]
-
-Search Filters:
-Buscar desde la sidebar que esta en la home
-O con el parametro al final de la url ?s=Hola
+### Como probar las funcionalidades
+- General: 
+    En el directorio del theme hay un archivo xml que se puede importar para tener contenido  de prueba. Se debe ir a Herramientas - Importar - Ejecutar el importador. Esto es Opcional
+- Metabox Redirect:
+    Crear una pagina y se observará el metabox a la derecha
+- Listado de Post con paginación:
+    Se debe crear o editar una página y pegar en el editor el siguiente shortcode [broobe-postlist]
+- Search Filters:
+    Buscar desde la sidebar que esta en la home
+    O con el parametro al final de la url ?s=Hola
 
 
 Mejoras: 
