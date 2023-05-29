@@ -4,7 +4,7 @@ namespace Src;
 
 
 use Src\ListPagination;
-use Src\Core\CustomEndpoint;
+use Src\CustomEndpoint;
 use Src\Core\HooksManager;
 
 use Src\MetaBoxRedirect;
@@ -12,7 +12,7 @@ use Src\MetaBoxRedirect;
 
 class Theme
 {
-	private static $instance;
+	private static $instance,$initializer,$hooks_manager;
 
 	public static function instance()
 	{
@@ -26,23 +26,25 @@ class Theme
 	public function init()
 	{
 
-		$hooks_manager = new HooksManager();
+		$this->hooks_manager = new HooksManager();
+
+		$this->initializer = [
+			new MetaBoxRedirect("broobe-metabox","Choose a page to redirect"),
+			new CustomEndpoint,
+			new ListPagination("broobe-postlist"),
+			new SearchQuery
+		];
+
+		$this->initialize();
 
 		
+	}
 
-		$metabox = new MetaBoxRedirect("broobe-metabox","Choose a page to redirect");
-
-		$custom_endpoint = new CustomEndpoint;
-		
-		$list_pagination = new ListPagination("broobe-postlist");
-
-
-		$hooks_manager->register( $metabox );
-
-		$hooks_manager->register( $list_pagination );
-
-		$hooks_manager->register( $custom_endpoint );
-		
+	private function initialize()
+	{
+		foreach($this->initializer as $item){
+			$this->hooks_manager->register( $item );
+		}
 	}
 }
 

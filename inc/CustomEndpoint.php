@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Core;
+namespace Src;
 
 use Src\Core\Interfaces\Actions;
 use Src\Core\ListPagination;

@@ -9,7 +9,7 @@ jQuery(document).ready(function( $ ) {
     async function getData(counter) {
 
        
-       $( "#spinner").addClass("active")
+       $( "#list-pagination #spinner").addClass("active")
       try {
    
         let quantity = counter * ajax_var.per_page;
@@ -30,18 +30,16 @@ jQuery(document).ready(function( $ ) {
         
         count = data.count;
         max_pages = data.max_pages;
-        console.log(max_pages)
         listData(data);
         
         
-        $( "#spinner").removeClass("active")
-        $( ".content").addClass("active")
+        $( "#list-pagination #spinner").removeClass("active")
+        $( "#list-pagination .content").addClass("active")
         if( max_pages == 1){
-           console.log("Holas")
-            $( "#pagination").removeClass("active")
+            $( "#list-pagination #pagination").removeClass("active")
         }else{
            
-            $( "#pagination").addClass("active")
+            $( "#list-pagination #pagination").addClass("active")
             
         }
        
@@ -54,7 +52,7 @@ jQuery(document).ready(function( $ ) {
     var counter = 1;
     
 
-    $("#pagination").click(function(e){
+    $("#list-pagination #pagination").click(function(e){
         
        
         counter +=1;
@@ -65,9 +63,9 @@ jQuery(document).ready(function( $ ) {
 
     function listData(data) {
   
-        $("#posts").empty()
+        $("#list-pagination #posts").empty()
         data.posts.map(function (item) {
-            $("#posts").append(`<li><a href="${item.permalink}"><h3">${(item.post_title)?item.post_title:"Post ID: "+item.post_id}</h3></a></li>`);
+            $("#list-pagination #posts").append(`<li><a href="${item.permalink}"><h3">${(item.post_title)?item.post_title:"Post ID: "+item.post_id}</h3></a></li>`);
             
       });
 

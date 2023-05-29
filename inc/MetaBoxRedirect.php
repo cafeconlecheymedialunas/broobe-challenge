@@ -11,7 +11,6 @@ class MetaBoxRedirect implements Actions
     public function __construct($id, $title)
     {
 
-   
         $this->id = $id;
         $this->title = $title;
     }
@@ -41,7 +40,7 @@ class MetaBoxRedirect implements Actions
 
         ));
 
-?>
+        ?>
 
         <label><?= __("Choose a page:",TEXT_DOMAIN);?> </label>
 
@@ -54,7 +53,7 @@ class MetaBoxRedirect implements Actions
         </select>
 
 
-<?php
+        <?php
     }
 
 
@@ -84,6 +83,5 @@ class MetaBoxRedirect implements Actions
             exit();
         }
 
-        
     }
 }
