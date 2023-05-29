@@ -36,7 +36,7 @@ No pude instalar el Docker Desktop en mi computadora. Por lo tanto no use el wp-
     O con el parametro al final de la url ?s=Hola
 
 
-Mejoras: 
+### Mejoras: 
 Metabox Redirect:
 
 Crear una pagina y se observará el metabox a la derecha
